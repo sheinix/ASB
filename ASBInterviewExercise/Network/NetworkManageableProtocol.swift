@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Defines the Networking Methods classes must implement to fetch network data
+/// Defines the Networking Methods classes must implement to fetch network data
 protocol NetworkManageable {
     
     /// Fetches all the transaction data and returns
