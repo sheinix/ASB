@@ -86,3 +86,23 @@ extension TransactionListViewController: UITableViewDataSource {
         return CGFloat(20.0)
     }
 }
+
+// - MARK:  UITableViewDelegate
+extension TransactionListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let transaction = viewModel.transactionsList[indexPath.row]
+        self.pushDetailTransaction(transaction: transaction)
+    }
+}
+
+// - MARK:  Navigation
+// Ideally this code should be somewhere else like a Coordinator to handle navigation flow
+// but for time constraints will do it here
+extension TransactionListViewController {
+    func pushDetailTransaction(transaction: TransactionData) {
+        let txViewModel = TransactionViewModel(transactionData: transaction)
+        let transactionDetailVC = TransactionDetailViewController(viewModel: txViewModel)
+        self.navigationController?.pushViewController(transactionDetailVC, animated: true)
+    }
+}

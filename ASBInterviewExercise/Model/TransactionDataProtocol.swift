@@ -55,12 +55,12 @@ extension TransactionData {
     }
     
     func txDateFormatted() -> String {
-        //todo
-        return ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        return dateFormatter.string(from: transactionDate)
     }
     
     func getGSTTax() -> Double {
-        // TODO
-        return 0.0
+        return round(txValue() - (txValue()/Constants.Numbers.GSTTaxMultiplier))
     }
 }

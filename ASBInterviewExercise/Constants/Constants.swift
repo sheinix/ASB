@@ -20,9 +20,16 @@ struct Constants {
     
     struct ReuseIds {
         static let transactionTableViewCellId: String = "transactionTableViewCellId"
+        static let detailTableViewCellId: String = "detailTableViewCellId"
     }
     
     struct Titles {
         static let TranasactionList: String = "💸 ASB Transactions"
+        static let TransactionTitle: String = "👀 Transaction Details"
+    }
+    
+    struct Numbers{
+        // The tax % expressed in a multiplier number (e.g. 15% is 1.15):
+        static let GSTTaxMultiplier: Double = 1.15
     }
 }
