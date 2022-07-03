@@ -8,14 +8,17 @@
 import UIKit
 
 class TransactionListViewController: UIViewController {
-
-    @IBOutlet weak var demoTextView: UITextView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var viewModel = TransactionsViewModel(networkMngr: NetworkManager())
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        demoTextView.text = ""
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

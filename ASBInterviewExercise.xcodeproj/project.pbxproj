@@ -13,6 +13,10 @@
 		BD1579C82872304B0060AD17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C72872304B0060AD17 /* Constants.swift */; };
 		BD1579CA287230850060AD17 /* TransactionDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */; };
 		BD1579CC287230AA0060AD17 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579CB287230AA0060AD17 /* TransactionType.swift */; };
+		BD1579CE287231D20060AD17 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579CD287231D20060AD17 /* NetworkManager.swift */; };
+		BD1579D0287231F00060AD17 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579CF287231F00060AD17 /* Errors.swift */; };
+		BD1579D2287232500060AD17 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579D1287232500060AD17 /* Transaction.swift */; };
+		BD1579D4287232780060AD17 /* DateFormatter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579D3287232780060AD17 /* DateFormatter+Helper.swift */; };
 		DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */; };
 		DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */; };
 		DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */; };
@@ -49,6 +53,10 @@
 		BD1579C72872304B0060AD17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataProtocol.swift; sourceTree = "<group>"; };
 		BD1579CB287230AA0060AD17 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		BD1579CD287231D20060AD17 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BD1579CF287231F00060AD17 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		BD1579D1287232500060AD17 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		BD1579D3287232780060AD17 /* DateFormatter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helper.swift"; sourceTree = "<group>"; };
 		DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBInterviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 			children = (
 				DCF7BB3826B23ED000AE0E0E /* DIManager.swift */,
 				BD1579C52872302E0060AD17 /* NetworkManageableProtocol.swift */,
+				BD1579CD287231D20060AD17 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			children = (
 				BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */,
 				BD1579CB287230AA0060AD17 /* TransactionType.swift */,
+				BD1579D1287232500060AD17 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1579C72872304B0060AD17 /* Constants.swift */,
+				BD1579CF287231F00060AD17 /* Errors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 		BD1579C228722FAD0060AD17 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BD1579D3287232780060AD17 /* DateFormatter+Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,9 +363,13 @@
 				BD1579CA287230850060AD17 /* TransactionDataProtocol.swift in Sources */,
 				BD1579C62872302E0060AD17 /* NetworkManageableProtocol.swift in Sources */,
 				BD1579C4287230030060AD17 /* TransactionsViewModel.swift in Sources */,
+				BD1579D0287231F00060AD17 /* Errors.swift in Sources */,
+				BD1579D2287232500060AD17 /* Transaction.swift in Sources */,
+				BD1579CE287231D20060AD17 /* NetworkManager.swift in Sources */,
 				DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */,
 				DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */,
 				BD1579CC287230AA0060AD17 /* TransactionType.swift in Sources */,
+				BD1579D4287232780060AD17 /* DateFormatter+Helper.swift in Sources */,
 				DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */,
 				DCF7BB3926B23ED000AE0E0E /* DIManager.swift in Sources */,
 				BD1579C82872304B0060AD17 /* Constants.swift in Sources */,
