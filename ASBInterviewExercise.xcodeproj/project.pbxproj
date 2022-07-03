@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1579BB28722F2E0060AD17 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD1579BA28722F2E0060AD17 /* SnapKit */; };
+		BD1579C4287230030060AD17 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C3287230030060AD17 /* TransactionsViewModel.swift */; };
+		BD1579C62872302E0060AD17 /* NetworkManageableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C52872302E0060AD17 /* NetworkManageableProtocol.swift */; };
+		BD1579C82872304B0060AD17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C72872304B0060AD17 /* Constants.swift */; };
+		BD1579CA287230850060AD17 /* TransactionDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */; };
+		BD1579CC287230AA0060AD17 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579CB287230AA0060AD17 /* TransactionType.swift */; };
 		DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */; };
 		DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */; };
-		DCF7BB0826B23DFF00AE0E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */; };
+		DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */; };
 		DCF7BB0B26B23DFF00AE0E0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */; };
 		DCF7BB0D26B23E0200AE0E0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */; };
 		DCF7BB1026B23E0200AE0E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */; };
@@ -38,10 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD1579C3287230030060AD17 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		BD1579C52872302E0060AD17 /* NetworkManageableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManageableProtocol.swift; sourceTree = "<group>"; };
+		BD1579C72872304B0060AD17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataProtocol.swift; sourceTree = "<group>"; };
+		BD1579CB287230AA0060AD17 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBInterviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
 		DCF7BB0A26B23DFF00AE0E0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF7BB0F26B23E0200AE0E0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF7BB3526B23E3600AE0E0E /* Swinject in Frameworks */,
+				BD1579BB28722F2E0060AD17 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +94,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD1579BC28722F670060AD17 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
+				DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */,
+				DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */,
+				DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BD1579BD28722F840060AD17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7BB3826B23ED000AE0E0E /* DIManager.swift */,
+				BD1579C52872302E0060AD17 /* NetworkManageableProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BD1579BE28722F900060AD17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD1579C9287230850060AD17 /* TransactionDataProtocol.swift */,
+				BD1579CB287230AA0060AD17 /* TransactionType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD1579BF28722F980060AD17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD1579C3287230030060AD17 /* TransactionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD1579C028722F9F0060AD17 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7BB3626B23EB800AE0E0E /* RestClient.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		BD1579C128722FA70060AD17 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BD1579C72872304B0060AD17 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BD1579C228722FAD0060AD17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DCF7BAF726B23DFE00AE0E0E = {
 			isa = PBXGroup;
 			children = (
@@ -106,14 +178,15 @@
 			isa = PBXGroup;
 			children = (
 				DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */,
-				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
-				DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */,
-				DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */,
-				DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */,
-				DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */,
+				BD1579BC28722F670060AD17 /* UI */,
+				BD1579BD28722F840060AD17 /* Network */,
+				BD1579C028722F9F0060AD17 /* DI */,
+				BD1579BF28722F980060AD17 /* ViewModel */,
+				BD1579BE28722F900060AD17 /* Model */,
+				BD1579C128722FA70060AD17 /* Constants */,
+				BD1579C228722FAD0060AD17 /* Extensions */,
 				DCF7BB1126B23E0200AE0E0E /* Info.plist */,
-				DCF7BB3626B23EB800AE0E0E /* RestClient.swift */,
-				DCF7BB3826B23ED000AE0E0E /* DIManager.swift */,
+				DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */,
 			);
 			path = ASBInterviewExercise;
 			sourceTree = "<group>";
@@ -154,6 +227,7 @@
 			name = ASBInterviewExercise;
 			packageProductDependencies = (
 				DCF7BB3426B23E3600AE0E0E /* Swinject */,
+				BD1579BA28722F2E0060AD17 /* SnapKit */,
 			);
 			productName = ASBInterviewExercise;
 			productReference = DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */;
@@ -228,6 +302,7 @@
 			mainGroup = DCF7BAF726B23DFE00AE0E0E;
 			packageReferences = (
 				DCF7BB3326B23E3600AE0E0E /* XCRemoteSwiftPackageReference "Swinject" */,
+				BD1579B928722F2E0060AD17 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = DCF7BB0126B23DFE00AE0E0E /* Products */;
 			projectDirPath = "";
@@ -273,10 +348,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF7BB3726B23EB800AE0E0E /* RestClient.swift in Sources */,
-				DCF7BB0826B23DFF00AE0E0E /* ViewController.swift in Sources */,
+				BD1579CA287230850060AD17 /* TransactionDataProtocol.swift in Sources */,
+				BD1579C62872302E0060AD17 /* NetworkManageableProtocol.swift in Sources */,
+				BD1579C4287230030060AD17 /* TransactionsViewModel.swift in Sources */,
+				DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */,
 				DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */,
+				BD1579CC287230AA0060AD17 /* TransactionType.swift in Sources */,
 				DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */,
 				DCF7BB3926B23ED000AE0E0E /* DIManager.swift in Sources */,
+				BD1579C82872304B0060AD17 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +685,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BD1579B928722F2E0060AD17 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		DCF7BB3326B23E3600AE0E0E /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
@@ -616,6 +704,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BD1579BA28722F2E0060AD17 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD1579B928722F2E0060AD17 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		DCF7BB3426B23E3600AE0E0E /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCF7BB3326B23E3600AE0E0E /* XCRemoteSwiftPackageReference "Swinject" */;

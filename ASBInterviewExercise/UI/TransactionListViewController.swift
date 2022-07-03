@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TransactionListViewController: UIViewController {
 
     @IBOutlet weak var demoTextView: UITextView!
     
