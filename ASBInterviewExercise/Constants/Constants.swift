@@ -17,4 +17,12 @@ struct Constants {
         static let customRequestTimeOut: TimeInterval = 45.0
         static let transactionEndpoint: String = "https://gist.githubusercontent.com/Josh-Ng/500f2716604dc1e8e2a3c6d31ad01830/raw/4d73acaa7caa1167676445c922835554c5572e82/test-data.json"
     }
+    
+    struct ReuseIds {
+        static let transactionTableViewCellId: String = "transactionTableViewCellId"
+    }
+    
+    struct Titles {
+        static let TranasactionList: String = "💸 ASB Transactions"
+    }
 }

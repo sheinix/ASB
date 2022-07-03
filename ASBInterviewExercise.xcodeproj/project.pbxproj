@@ -17,6 +17,8 @@
 		BD1579D0287231F00060AD17 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579CF287231F00060AD17 /* Errors.swift */; };
 		BD1579D2287232500060AD17 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579D1287232500060AD17 /* Transaction.swift */; };
 		BD1579D4287232780060AD17 /* DateFormatter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579D3287232780060AD17 /* DateFormatter+Helper.swift */; };
+		BD1579D7287233450060AD17 /* TransactionDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1579D5287233450060AD17 /* TransactionDataTableViewCell.swift */; };
+		BD1579D8287233450060AD17 /* TransactionDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1579D6287233450060AD17 /* TransactionDataTableViewCell.xib */; };
 		DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */; };
 		DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */; };
 		DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */; };
@@ -57,6 +59,8 @@
 		BD1579CF287231F00060AD17 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		BD1579D1287232500060AD17 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		BD1579D3287232780060AD17 /* DateFormatter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helper.swift"; sourceTree = "<group>"; };
+		BD1579D5287233450060AD17 /* TransactionDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataTableViewCell.swift; sourceTree = "<group>"; };
+		BD1579D6287233450060AD17 /* TransactionDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDataTableViewCell.xib; sourceTree = "<group>"; };
 		DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBInterviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
 				DCF7BB0726B23DFF00AE0E0E /* TransactionListViewController.swift */,
+				BD1579D5287233450060AD17 /* TransactionDataTableViewCell.swift */,
+				BD1579D6287233450060AD17 /* TransactionDataTableViewCell.xib */,
 				DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */,
 				DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */,
 			);
@@ -332,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1579D8287233450060AD17 /* TransactionDataTableViewCell.xib in Resources */,
 				DCF7BB1026B23E0200AE0E0E /* LaunchScreen.storyboard in Resources */,
 				DCF7BB0D26B23E0200AE0E0E /* Assets.xcassets in Resources */,
 				DCF7BB0B26B23DFF00AE0E0E /* Main.storyboard in Resources */,
@@ -367,6 +374,7 @@
 				BD1579D2287232500060AD17 /* Transaction.swift in Sources */,
 				BD1579CE287231D20060AD17 /* NetworkManager.swift in Sources */,
 				DCF7BB0826B23DFF00AE0E0E /* TransactionListViewController.swift in Sources */,
+				BD1579D7287233450060AD17 /* TransactionDataTableViewCell.swift in Sources */,
 				DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */,
 				BD1579CC287230AA0060AD17 /* TransactionType.swift in Sources */,
 				BD1579D4287232780060AD17 /* DateFormatter+Helper.swift in Sources */,

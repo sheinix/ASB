@@ -15,6 +15,7 @@ class RestClient {
         session = URLSession(configuration: .default)
     }
     
+    @discardableResult
     func apiRequest(_ request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTask {
         
         let sessionTask = session.dataTask(with: request, completionHandler: completionHandler)
